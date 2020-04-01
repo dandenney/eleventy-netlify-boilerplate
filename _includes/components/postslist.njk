@@ -1,7 +1,10 @@
-<section>
-	{% for post in postslist | reverse %}
-		<article{% if post.url == url %} data-current="current item"{% endif %}>
-			<h3>
+{% for post in postslist | reverse %}
+	<article class="post" {% if post.url == url %} data-current="current item"{% endif %} style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+		{% if post.data.thumb %}
+			<img alt="{{ post.data.title }}" class="thumb u-mr-1" src="{{ post.data.thumb }}" />
+		{% endif %}
+		<div class="meta">
+			<h3 class="title">
 				<a href="{{ post.url | url }}">
 					{% if post.data.title %}
 						{{ post.data.title }}
@@ -11,17 +14,17 @@
 				</a>
 			</h3>
 			{% if post.data.summary %}
-				<p>
+				<p class="measure">
 					{{ post.data.summary }}
 				</p>
 			{% endif %}
-			<p>
+			<p class="datetime">
 				<time datetime="{{ post.date | machineDate }}">
 					<small>{{ post.date | readableDate }} by {{ metadata.author.name }}</small>
 				</time>
 			</p>
 			{% if post.data.tags %}
-				<p>
+				<p class="tags">
 					{% for tag in post.data.tags %}
 		  			{%- if tag != "post" -%}
 		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
@@ -30,6 +33,6 @@
 					{% endfor %}
 				</p>
 			{% endif %}
-		</article>
-	{% endfor %}
-</section>
+		</div>
+	</article>
+{% endfor %}

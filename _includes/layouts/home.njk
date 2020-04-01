@@ -3,4 +3,636 @@ layout: layouts/base.njk
 section: home
 ---
 
-{{ layoutContent | safe }}
+<main class="u-px-2 u-mt-2 lg:u-px-3">
+  <section class="home-intro">
+    {{ layoutContent | safe }}
+  </section>
+
+  <div class="home-articles lg:u-d-f">
+    <section class="u-pt-4 lg:u-pr-2 lg:u-w-50pc">
+      <h2 class="u-b-b u-pb-05">Articles</h2>
+      {% set postslist = collections.article | head(-2) %}
+      {% set postslistCounter = collections.article | length %}
+      {% include "components/postslist.njk" %}
+      <p class="u-ta-c u-pt-1"><a class="btn" href="/articles">View All Articles</p>
+    </section>
+
+    <section class="home-cases u-pt-4 lg:u-pl-2 lg:u-w-50pc">
+      <h2 class="u-b-b u-pb-05">Case Summaries</h2>
+      {% set postslist = collections.case | head(-6) %}
+      {% set postslistCounter = collections.case | length %}
+      {% include "components/postslist.njk" %}
+      <p class="u-ta-c u-pt-1"><a class="btn" href="/cases">View All Case Summaries</p>
+    </section>
+  </div>
+</main>
+
+<style>
+  h1 {
+    margin: 0 auto 1rem;
+    max-width: 1100px;
+  }
+
+  #wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    position: relative;
+  }
+
+  #wrapper small {
+    color: var(--accent);
+    max-width: 75%;
+    position: absolute;
+    right: 5px;
+    top: calc(100% - 84px);
+  }
+
+  .line {
+    fill: none;
+    stroke: #c7727e;
+    stroke-width: 2;
+  }
+
+  .y-axis-label {
+    fill: #6b7c9f;
+    font-family: "Chronicle Display A", "Chronicle Display B";
+    font-size: 1rem;
+    text-anchor: middle;
+    transform: rotate(-90deg);
+  }
+
+  .listening-rect {
+    fill: transparent;
+  }
+
+  .tick text {
+    font-family: "Decimal A", "Decimal B";
+    font-size: 0.75rem;
+  }
+
+  .x-axis .tick:not(:last-child) text {
+    display: none;
+  }
+
+  .x-axis .tick:first-of-type text {
+    display: block;
+  }
+
+  .domain {
+    stroke: #9faac0;
+  }
+
+  .tooltip {
+    opacity: 0;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    padding: 0.6em 1em;
+    background: #fff;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    z-index: 10;
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+  }
+
+  .tooltip:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: translate(-50%, 50%) rotate(45deg);
+    transform-origin: center center;
+    z-index: 10;
+  }
+
+  .tooltip-date {
+    margin-bottom: 0.2em;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+
+  @media screen and (min-width: 600px) {
+    #wrapper small {
+      top: calc(100% - 72px);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .x-axis .tick:not(:last-child) text {
+      display: block;
+    }
+  }
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+
+<script>
+  const clearanceRates = [
+    {
+      "year": 2018,
+      "clearances": 9340,
+      "murders": 15877,
+      "percentage": 0.588272343641746
+    },
+    {
+      "year": 2017,
+      "clearances": 9850,
+      "murders": 17004,
+      "percentage": 0.579275464596566
+    },
+    {
+      "year": 2016,
+      "clearances": 9382,
+      "murders": 16891,
+      "percentage": 0.555443727428808
+    },
+    {
+      "year": 2015,
+      "clearances": 9141,
+      "murders": 15594,
+      "percentage": 0.586186994998076
+    },
+    {
+      "year": 2014,
+      "clearances": 8510,
+      "murders": 13923,
+      "percentage": 0.611218846512964
+    },
+    {
+      "year": 2013,
+      "clearances": 8614,
+      "murders": 14103,
+      "percentage": 0.610792030064525
+    },
+    {
+      "year": 2012,
+      "clearances": 8366,
+      "murders": 14822,
+      "percentage": 0.564431250843341
+    },
+    {
+      "year": 2011,
+      "clearances": 8388,
+      "murders": 14551,
+      "percentage": 0.576455226444918
+    },
+    {
+      "year": 2010,
+      "clearances": 8419,
+      "murders": 14577,
+      "percentage": 0.577553680455512
+    },
+    {
+      "year": 2009,
+      "clearances": 8950,
+      "murders": 15166,
+      "percentage": 0.59013583014638
+    },
+    {
+      "year": 2008,
+      "clearances": 9381,
+      "murders": 16056,
+      "percentage": 0.584267563527653
+    },
+    {
+      "year": 2007,
+      "clearances": 9250,
+      "murders": 16764,
+      "percentage": 0.551777618706753
+    },
+    {
+      "year": 2006,
+      "clearances": 9185,
+      "murders": 16824,
+      "percentage": 0.54594626723728
+    },
+    {
+      "year": 2005,
+      "clearances": 9097,
+      "murders": 16180,
+      "percentage": 0.562237330037083
+    },
+    {
+      "year": 2004,
+      "clearances": 8774,
+      "murders": 15607,
+      "percentage": 0.562183635548151
+    },
+    {
+      "year": 2003,
+      "clearances": 8849,
+      "murders": 15814,
+      "percentage": 0.559567471860377
+    },
+    {
+      "year": 2002,
+      "clearances": 9099,
+      "murders": 15617,
+      "percentage": 0.582634308766088
+    },
+    {
+      "year": 2001,
+      "clearances": 8746,
+      "murders": 15317,
+      "percentage": 0.570999542991447
+    },
+    {
+      "year": 2000,
+      "clearances": 8598,
+      "murders": 14728,
+      "percentage": 0.583785985877241
+    },
+    {
+      "year": 1999,
+      "clearances": 8991,
+      "murders": 14361,
+      "percentage": 0.626070607896386
+    },
+    {
+      "year": 1998,
+      "clearances": 9866,
+      "murders": 15750,
+      "percentage": 0.626412698412698
+    },
+    {
+      "year": 1997,
+      "clearances": 10286,
+      "murders": 16931,
+      "percentage": 0.607524658909692
+    },
+    {
+      "year": 1996,
+      "clearances": 10531,
+      "murders": 17978,
+      "percentage": 0.585771498498164
+    },
+    {
+      "year": 1995,
+      "clearances": 11765,
+      "murders": 20365,
+      "percentage": 0.577706849987724
+    },
+    {
+      "year": 1994,
+      "clearances": 13780,
+      "murders": 22185,
+      "percentage": 0.621140410187063
+    },
+    {
+      "year": 1993,
+      "clearances": 14824,
+      "murders": 23402,
+      "percentage": 0.63345013246731
+    },
+    {
+      "year": 1992,
+      "clearances": 14732,
+      "murders": 23016,
+      "percentage": 0.640076468543622
+    },
+    {
+      "year": 1991,
+      "clearances": 15020,
+      "murders": 23957,
+      "percentage": 0.626956630629879
+    },
+    {
+      "year": 1990,
+      "clearances": 14963,
+      "murders": 22771,
+      "percentage": 0.657107724737605
+    },
+    {
+      "year": 1989,
+      "clearances": 12602,
+      "murders": 20855,
+      "percentage": 0.604267561735795
+    },
+    {
+      "year": 1988,
+      "clearances": 12588,
+      "murders": 18481,
+      "percentage": 0.681131973378064
+    },
+    {
+      "year": 1987,
+      "clearances": 13167,
+      "murders": 19492,
+      "percentage": 0.675507900677201
+    },
+    {
+      "year": 1986,
+      "clearances": 14019,
+      "murders": 20103,
+      "percentage": 0.697358603193553
+    },
+    {
+      "year": 1985,
+      "clearances": 12795,
+      "murders": 18510,
+      "percentage": 0.691247974068071
+    },
+    {
+      "year": 1984,
+      "clearances": 12894,
+      "murders": 17470,
+      "percentage": 0.738065254722381
+    },
+    {
+      "year": 1983,
+      "clearances": 13603,
+      "murders": 18758,
+      "percentage": 0.725183921526815
+    },
+    {
+      "year": 1982,
+      "clearances": 13800,
+      "murders": 20392,
+      "percentage": 0.676735974892115
+    },
+    {
+      "year": 1981,
+      "clearances": 15406,
+      "murders": 21733,
+      "percentage": 0.708875903004647
+    },
+    {
+      "year": 1980,
+      "clearances": 16147,
+      "murders": 22454,
+      "percentage": 0.719114634363588
+    },
+    {
+      "year": 1979,
+      "clearances": 15507,
+      "murders": 21093,
+      "percentage": 0.735172806144218
+    },
+    {
+      "year": 1978,
+      "clearances": 14738,
+      "murders": 19366,
+      "percentage": 0.761024475885573
+    },
+    {
+      "year": 1977,
+      "clearances": 14077,
+      "murders": 18740,
+      "percentage": 0.751173959445037
+    },
+    {
+      "year": 1976,
+      "clearances": 14519,
+      "murders": 18101,
+      "percentage": 0.802110380641953
+    },
+    {
+      "year": 1975,
+      "clearances": 15350,
+      "murders": 19716,
+      "percentage": 0.778555487928586
+    },
+    {
+      "year": 1974,
+      "clearances": 15332,
+      "murders": 19558,
+      "percentage": 0.783924736680642
+    },
+    {
+      "year": 1973,
+      "clearances": 14377,
+      "murders": 18569,
+      "percentage": 0.774247401583284
+    },
+    {
+      "year": 1972,
+      "clearances": 13197,
+      "murders": 17042,
+      "percentage": 0.774380941204084
+    },
+    {
+      "year": 1971,
+      "clearances": 12776,
+      "murders": 16173,
+      "percentage": 0.789958572930192
+    },
+    {
+      "year": 1970,
+      "clearances": 11605,
+      "murders": 14361,
+      "percentage": 0.808091358540492
+    },
+    {
+      "year": 1969,
+      "clearances": 10647,
+      "murders": 13378,
+      "percentage": 0.7958588727762
+    },
+    {
+      "year": 1968,
+      "clearances": 9793,
+      "murders": 12453,
+      "percentage": 0.786396852164137
+    },
+    {
+      "year": 1967,
+      "clearances": 8828,
+      "murders": 10958,
+      "percentage": 0.805621463770761
+    },
+    {
+      "year": 1966,
+      "clearances": 7766,
+      "murders": 9446,
+      "percentage": 0.822146940503917
+    },
+    {
+      "year": 1965,
+      "clearances": 7292,
+      "murders": 8739,
+      "percentage": 0.834420414235038
+    }
+  ]
+
+  async function drawLineChart() {
+
+    const parent = document.querySelector("#wrapper");
+
+    // 1. Access data
+
+    let dataset = clearanceRates
+
+    const yAccessor = d => (d.percentage * 100)
+    const xAccessor = d => d.year
+
+    // 2. Create chart dimensions
+
+    let dimensions = {
+      width: parent.offsetWidth,
+      height: 400,
+      margin: {
+        top: 20,
+        right: 5,
+        bottom: 40,
+        left: 60,
+      },
+    }
+    dimensions.boundedWidth = dimensions.width - dimensions.margin.left - dimensions.margin.right
+    dimensions.boundedHeight = dimensions.height - dimensions.margin.top - dimensions.margin.bottom
+
+    // 3. Draw canvas
+
+    const wrapper = d3.select("#wrapper")
+      .append("svg")
+        .attr("width", dimensions.width)
+        .attr("height", dimensions.height)
+        .attr("viewBox", `0 0 ${dimensions.width} ${dimensions.height}`)
+
+    const bounds = wrapper.append("g")
+        .attr("transform", `translate(${
+          dimensions.margin.left
+        }, ${
+          dimensions.margin.top
+        })`)
+
+    bounds.append("defs").append("clipPath")
+        .attr("id", "bounds-clip-path")
+      .append("rect")
+        .attr("width", dimensions.boundedWidth)
+        .attr("height", dimensions.boundedHeight)
+
+    const clip = bounds.append("g")
+      .attr("clip-path", "url(#bounds-clip-path)")
+
+    // 4. Create scales
+
+    const yScale = d3.scaleLinear()
+      .domain([0, 100])
+      .range([dimensions.boundedHeight, 0])
+
+    const xScale = d3.scaleLinear()
+      .domain(d3.extent(dataset, xAccessor))
+      .range([0, dimensions.boundedWidth])
+
+    // 5. Draw data
+
+    const lineGenerator = d3.line()
+      .x(d => xScale(xAccessor(d)))
+      .y(d => yScale(yAccessor(d)))
+
+    const line = clip.append("path")
+        .attr("class", "line")
+        .attr("d", lineGenerator(dataset))
+
+    // 6. Draw peripherals
+
+    const yAxisGenerator = d3.axisLeft()
+      .scale(yScale)
+
+    const yAxis = bounds.append("g")
+        .attr("class", "y-axis")
+      .call(yAxisGenerator)
+
+    const yAxisLabel = yAxis.append("text")
+        .attr("class", "y-axis-label")
+        .attr("x", -dimensions.boundedHeight / 2)
+        .attr("y", -dimensions.margin.left + 16)
+        .html("Clearance %")
+
+    const xAxisGenerator = d3.axisBottom()
+      .scale(xScale)
+      .tickFormat(d3.format("d"))
+
+    const xAxis = bounds.append("g")
+        .attr("class", "x-axis")
+        .style("transform", `translateY(${dimensions.boundedHeight}px)`)
+      .call(xAxisGenerator)
+
+    const flip = bounds
+      .append("line")
+      .attr("x1", 0)
+      .attr("y1", yScale(50))
+      .attr("x2", dimensions.boundedWidth)
+      .attr("y2", yScale(50))
+      .attr("stroke", "#8b9ab3")
+      .attr("stroke-dasharray", "2px 4px");
+
+    // 7. Set up interactions
+
+    const listeningRect = bounds.append("rect")
+      .attr("class", "listening-rect")
+      .attr("width", dimensions.boundedWidth)
+      .attr("height", dimensions.boundedHeight)
+      .on("mousemove", onMouseMove)
+      .on("mouseleave", onMouseLeave)
+
+    const tooltip = d3.select("#tooltip")
+    const tooltipCircle = bounds.append("circle")
+        .attr("class", "tooltip-circle")
+        .attr("r", 4)
+        .attr("stroke", "#c7727e")
+        .attr("fill", "white")
+        .attr("stroke-width", 2)
+        .style("opacity", 0)
+
+    function onMouseMove() {
+      const mousePosition = d3.mouse(this)
+      const hoveredDate = xScale.invert(mousePosition[0])
+
+      const getDistanceFromHoveredDate = d => Math.abs(xAccessor(d) - hoveredDate)
+      const closestIndex = d3.scan(dataset, (a, b) => (
+        getDistanceFromHoveredDate(a) - getDistanceFromHoveredDate(b)
+      ))
+      const closestDataPoint = dataset[closestIndex]
+
+      const closestXValue = xAccessor(closestDataPoint)
+      const closestYValue = yAccessor(closestDataPoint)
+
+      const formatDate = d3.timeFormat("%B %A %-d, %Y")
+      tooltip.select("#date")
+        .text(closestXValue)
+      tooltip.select("#percentage")
+        .text(d3.format(".0%")(closestDataPoint.percentage))
+      tooltip.select("#murders")
+          .text(closestDataPoint.murders)
+      tooltip.select("#clearances")
+          .text(closestDataPoint.clearances)
+
+      const x = xScale(closestXValue)
+        + dimensions.margin.left
+      const y = yScale(closestYValue)
+        + dimensions.margin.top
+
+      tooltip.style("transform", `translate(`
+        + `calc( -50% + ${x}px),`
+        + `calc(-100% + ${y}px)`
+        + `)`)
+
+      tooltip.style("opacity", 1)
+
+      tooltipCircle
+          .attr("cx", xScale(closestXValue))
+          .attr("cy", yScale(closestYValue))
+          .style("opacity", 1)
+    }
+
+    function onMouseLeave() {
+      tooltip.style("opacity", 0)
+
+      tooltipCircle.style("opacity", 0)
+    }
+  }
+  drawLineChart()
+
+</script>

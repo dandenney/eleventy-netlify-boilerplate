@@ -5,16 +5,14 @@
 
 	<body>
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
+		<header class="u-d-f u-fd-c u-ai-c">
+			<a class="u-my-1" href="{{ '/' | url }}" title="{{ metadata.title }}">
+				<img alt="{{ metadata.title}}" src="/static/img/true-crime-researchers.svg" width="220" />
+			</a>
 			{% include "components/nav.njk" %}
 		</header>
 
-		<main>
-			{{ layoutContent | safe }}
-		</main>
+		{{ layoutContent | safe }}
 
 		{% include "components/footer.njk" %}
 
