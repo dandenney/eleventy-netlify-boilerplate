@@ -22,20 +22,21 @@
 					{{ post.data.summary }}
 				</p>
 			{% endif %}
-			<p class="datetime">
+			<p class="datetime u-c-accent u-mt-0">
 				<time datetime="{{ post.date | machineDate }}">
-					<small>{{ post.date | readableDate }} by {{ metadata.author.name }}</small>
+					<small>Last updated: {{ post.date | readableDate }}</small>
 				</time>
 			</p>
 			{% if post.data.tags %}
-				<p class="tags">
+				<small class="tags u-c-accent">
+					Tags:
 					{% for tag in post.data.tags %}
 		  			{%- if tag != "post" -%}
 		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
 		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
 		  			{%- endif -%}
 					{% endfor %}
-				</p>
+				</small>
 			{% endif %}
 		</div>
 	</article>

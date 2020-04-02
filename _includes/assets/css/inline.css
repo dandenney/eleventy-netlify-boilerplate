@@ -179,15 +179,22 @@ a:hover {
   align-items: center;
 }
 
-.home-cases .post .title {
+.case-summaries .post {
+  align-items: flex-start;
+}
+
+.home-cases .post .title,
+.case-summaries .post .title {
   font-size: 1.6rem;
 }
 
-.home-cases .post {
+.home-cases .post,
+.case-summaries .post {
   display: flex;
 }
 
-.home-cases .post:not(:first-child) {
+.home-cases .post:not(:first-child),
+.case-summaries .post:not(:first-child) {
   border-top: 1px dotted var(--detail);
 }
 
@@ -198,7 +205,8 @@ a:hover {
 }
 
 .home-articles .post,
-.home-cases .post {
+.home-cases .post,
+.case-summaries .post {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
@@ -253,6 +261,18 @@ a:hover {
   .home-articles .post {
     max-width: 100%;
   }
+
+  .case-summaries .post {
+    width: calc(50% - 2rem);
+  }
+
+  .case-summaries .post:nth-child(odd) {
+    margin-right: 2rem;
+  }
+
+  .case-summaries .post:nth-child(even) {
+    margin-left: 2rem;
+  }
 }
 
 .u-ai-c {
@@ -282,6 +302,10 @@ a:hover {
 
 .u-b-l-dotted-series:not(:first-child) {
   border-left: 1px dotted var(--detail);
+}
+
+.u-c-accent {
+  color: var(--accent) !important;
 }
 
 .u-d-b {
@@ -323,6 +347,14 @@ a:hover {
 
 .u-mr-1 {
   margin-right: 1rem !important;
+}
+
+.u-mt-0 {
+  margin-top: 0 !important;
+}
+
+.u-mt-05 {
+  margin-top: 0.5rem !important;
 }
 
 .u-mt-1 {
@@ -404,6 +436,6 @@ a:hover {
   }
 
   .lg\:u-w-50pc {
-    width: 50%;
+    width: 50% !important;
   }
 }

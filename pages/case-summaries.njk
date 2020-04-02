@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: Case Summaries
+permalink: /case-summaries/index.html
+eleventyNavigation:
+  key: Case Summaries
+  order: 2
+---
+
+<main class="u-px-2 u-mt-2 lg:u-px-3">
+
+  <h1 class="u-b-b u-pb-05">{{ title }}</h1>
+
+  <section class="case-summaries lg:u-d-f u-fw-w">
+
+    {% set postslist = collections.case %}
+    {% include "components/caseslist.njk" %}
+
+  </section>
+
+</main>
