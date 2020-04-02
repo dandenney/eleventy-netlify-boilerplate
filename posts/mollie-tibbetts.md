@@ -1,7 +1,7 @@
 ---
 date: 2020-03-30
 summary: Mollie Tibbetts went for a run on July 17, 2018, and vanished. On August 21, 2018, Cristhian Rivera led law enforcement to her body.
-thumb: "http://placehold.it/100x125"
+thumb: "mollie-tibbetts-case.jpg"
 title: Mollie Tibbetts
 tags:
   - case

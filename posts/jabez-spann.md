@@ -1,7 +1,7 @@
 ---
 date: 2020-03-29
 summary: Jabez Spann was a 14-year-old who allegedly witnessed a murder. Then, he was murdered and people know who did it.
-thumb: "http://placehold.it/100x125"
+thumb: "jabez-spann-case.jpg"
 title: Jabez Spann
 tags:
   - case

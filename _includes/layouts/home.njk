@@ -8,8 +8,8 @@ section: home
     {{ layoutContent | safe }}
   </section>
 
-  <div class="home-articles lg:u-d-f">
-    <section class="u-pt-4 lg:u-pr-2 lg:u-w-50pc">
+  <div class="lg:u-d-f">
+    <section class="home-articles u-pt-4 lg:u-pr-2 lg:u-w-50pc">
       <h2 class="u-b-b u-pb-05">Articles</h2>
       {% set postslist = collections.article | head(-2) %}
       {% set postslistCounter = collections.article | length %}
@@ -21,7 +21,7 @@ section: home
       <h2 class="u-b-b u-pb-05">Case Summaries</h2>
       {% set postslist = collections.case | head(-6) %}
       {% set postslistCounter = collections.case | length %}
-      {% include "components/postslist.njk" %}
+      {% include "components/caseslist.njk" %}
       <p class="u-ta-c u-pt-1"><a class="btn" href="/cases">View All Case Summaries</p>
     </section>
   </div>
