@@ -1,5 +1,119 @@
 {
   "intro": "The two girls were great friends, enjoying a day off from school. Family dropped them off for a local hike and arranged to pick them up later. During their time out, Libby recorded video and photos of a man walking across a bridge and recorded audio of a man instructing them to go \"down the hill\". There may be more photos and videos, but those are what have been released so far.",
   "summary": "Abby and Libby went for a hike on February 13, 2017. They didn't show up to be picked up, and their bodies were found the next day.",
-  "title": "Delphi Murders"
+  "title": "Delphi Murders",
+  "audios": [
+    {
+      "title": "Delphi Murders /// Part 1 /// 110",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 65,
+      "url": "https://www.truecrimegarage.com/podcast/blog/delphi-murders-110-111",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/50322461",
+      "itunes": "https://itunes.apple.com/us/podcast/delphi-murders-part-1-110/id1062418176?i=1000385973341&mt=2"
+    },
+    {
+      "title": "Delphi Murders /// Part 2 /// 111",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 77,
+      "url": "https://www.truecrimegarage.com/podcast/blog/delphi-murders-110-111",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/50333412",
+      "itunes": "https://itunes.apple.com/us/podcast/delphi-murders-part-2-111/id1062418176?i=1000386009600&mt=2"
+    },
+    {
+      "title": "Delphi Murders Revisited /// Part 1 /// 320",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 70,
+      "url": "https://truecrimegarage.com/podcast/blog/delphi-murders-revisited-320-321",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/62760739",
+      "itunes": "https://podcasts.apple.com/us/podcast/delphi-murders-revisited-part-1-320/id1062418176?i=1000445175498"
+    },
+    {
+      "title": "Delphi Murders Revisited /// Part 2 /// 321",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 62,
+      "url": "https://truecrimegarage.com/podcast/blog/delphi-murders-revisited-320-321",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage",
+      "itunes": "https://podcasts.apple.com/us/podcast/delphi-murders-revisited-part-2-321/id1062418176?i=1000445231852"
+    }
+  ],
+  "texts": [
+    {
+      "title": "Delphi Homicide Investigation",
+      "type": "Website",
+      "source": "IN.gov",
+      "url": "http://www.in.gov/isp/delphi.htm"
+    },
+    {
+      "title": "IN - Abigail Williams, 13, & Liberty German, 13, Delphi, 13 Feb 2017 #1",
+      "type": "Forum",
+      "source": "Websleuths",
+      "url": "https://www.websleuths.com/forums/threads/in-abigail-williams-13-liberty-german-13-delphi-13-feb-2017-1.329442/"
+    },
+    {
+      "title": "Delphi murders: 6 months later, this is what we know",
+      "type": "Post",
+      "source": "Journal & Courier",
+      "url": "http://www.jconline.com/story/news/crime/2017/08/11/delphi-murders-6-months-later-what-we-know/555807001/"
+    },
+    {
+      "title": "Police: Delphi murder victims spoke of man behind them in audio played for family",
+      "type": "Post",
+      "source": "13 WTHR",
+      "url": "http://www.wthr.com/article/police-delphi-murder-victims-spoke-of-man-behind-them-in-audio-played-for-family"
+    },
+    {
+      "title": "Lead detective in Delphi murders confirms police have more audio from phone, DNA evidence",
+      "type": "Post",
+      "source": "FOX 59",
+      "url": "http://fox59.com/2017/08/14/lead-detectives-in-delphi-murders-confirms-police-have-more-audio-from-teens-phone-dna-evidence/amp/"
+    },
+    {
+      "title": "Delphi Murders",
+      "type": "Forum",
+      "source": "Reddit",
+      "url": "https://www.reddit.com/r/DelphiMurders/"
+    },
+    {
+      "title": "Delphi murders: Police release video of suspect in teens' murders in 2017",
+      "type": "Post",
+      "source": "USA Today",
+      "url": "https://www.usatoday.com/story/news/nation/2019/04/22/delphi-murders-update-2019-new-cellphone-video-sketch-released/3539565002/"
+    },
+    {
+      "title": "Man Who Killed Himself in Standoff Was Possible Suspect in Unsolved 2017 Slaying of 2 Ind. Girls",
+      "type": "Post",
+      "source": "People.com",
+      "url": "https://people.com/crime/man-who-killed-himself-possible-suspect-delphi-murders/"
+    },
+    {
+      "title": "Libby German’s Sister Addresses Rumors About Delphi Murders On YouTube Livestream",
+      "type": "Post",
+      "source": "Oxygen.com",
+      "url": "https://www.oxygen.com/crime-time/libby-german-sister-kelsi-addresses-rumors-about-delphi-murders-on-youtube-livestream"
+    },
+    {
+      "title": "Police want to know if Etter is tied to Delphi killings",
+      "type": "Post",
+      "source": "Journal & Courier",
+      "url": "https://www.jconline.com/story/news/crime/2019/07/19/police-want-know-if-etter-tied-delphi-killings/1780296001/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "News Brief from February 15, 2017",
+      "description": "A short clip from Channel 13 Eyewitness News, covering the early details after the girls’ bodies were found.",
+      "url": "https://www.youtube.com/embed/u_WNHtqEUBo",
+      "source": "Youtube"
+    },
+    {
+      "title": "Delphi Homicide Press Conference",
+      "description": "Indiana State Police announce a new direction in the Delphi homicide investigation.",
+      "url": "https://www.youtube.com/embed/WfJQINVMWPE",
+      "source": "Youtube"
+    }
+  ]
 }

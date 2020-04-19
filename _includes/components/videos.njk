@@ -1,0 +1,11 @@
+{% import "components/youtube.njk" as youtube %}
+
+<ol class="videos-list">
+  {% for video in videos %}
+    <li>
+      <h3>{{ video.title }}</h3>
+      <p>{{ video.description }}</p>
+      {{ youtube.iframe('560', '315', video.url) }}
+    </li>
+  {% endfor %}
+</ol>

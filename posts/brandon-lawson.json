@@ -1,5 +1,86 @@
 {
   "intro": "There is about a 40-minute window in Brandon's life that leads to so many questions. In the time between calling his brother Kyle to bring him gas and Kyle arriving, Brandon called 911, asking for \"the cops\" to \"please hurry.\" In another call to Kyle's girlfriend, Brandon said he was bleeding and that he was 10 minutes up the road. The last known ping from his cell phone was from a tower 3 miles away from the scene, and his family has been looking for him ever since. We're only left with questions: What happened to Brandon that night? Was he in danger from people in the area or was he delusional? Where is he now?",
   "title": "Brandon Lawson",
-  "summary": "Brandon Lawson's truck broke down outside Bronte, Texas, on August 9, 2013. After midnight, he called 911 asking for the police."
+  "summary": "Brandon Lawson's truck broke down outside Bronte, Texas, on August 9, 2013. After midnight, he called 911 asking for the police.",
+  "audios": [
+    {
+      "title": "Brandon Lawson 911 Tape /// Part 1 ////// 85",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 61,
+      "url": "https://www.truecrimegarage.com/podcast/blog/brandon-lawson-911-tape-episodes-85-86",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/49291895",
+      "itunes": "https://itunes.apple.com/us/podcast/brandon-lawson-911-tape-part-1-85/id1062418176?i=1000382030418&mt=2"
+    },
+    {
+      "title": "Brandon Lawson 911 Tape /// Part 2 ////// 86",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 63,
+      "url": "https://www.truecrimegarage.com/podcast/blog/brandon-lawson-911-tape-episodes-85-86",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/49292893",
+      "itunes": "https://itunes.apple.com/us/podcast/brandon-lawson-911-tape-part-1-85/id1062418176?i=1000382030418&mt=2"
+    },
+    {
+      "title": "Brandon Lawson Update ////// 310",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 69,
+      "url": "https://www.truecrimegarage.com/podcast/blog/brandon-lawson-update-episode-310",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/61851501",
+      "itunes": "https://podcasts.apple.com/us/podcast/brandon-lawson-update-310/id1062418176?i=1000441166178"
+    },
+    {
+      "title": "Brandon Lawson - 193 - Generation Why",
+      "source": "Generation Why",
+      "thumb": "generation-why.jpg",
+      "runtime": 46,
+      "url": "http://thegenerationwhypodcast.com/brandon-lawson-193-generation-why",
+      "stitcher": "https://www.stitcher.com/podcast/the-generation-why-podcast/e/45754719",
+      "itunes": "https://itunes.apple.com/us/podcast/brandon-lawson-193-generation-why/id541481026?i=1000373829844&mt=2"
+    },
+    {
+      "title": "Episode 6: Brandon Lawson",
+      "source": "The Vanished Podcast",
+      "thumb": "the-vanished-podcast.jpg",
+      "runtime": 32,
+      "url": "http://www.thevanishedpodcast.com/episodes/2016/5/10/episode-6-brandon-lawson",
+      "stitcher": "https://www.stitcher.com/podcast/the-vanished-podcast/e/46227740",
+      "itunes": "https://itunes.apple.com/us/podcast/brandon-lawson/id1081124929?i=1000367889357&mt=2"
+    }
+  ],
+  "texts": [
+    {
+      "title": "Missing Brandon Lawson",
+      "type": "Website",
+      "source": "MissingBrandonLawson.com",
+      "url": "http://www.missingbrandonlawson.com"
+    },
+    {
+      "title": "Help Find Brandon Lawson",
+      "type": "Forum",
+      "source": "Facebook",
+      "url": "https://www.facebook.com/helpfindbrandonlawson"
+    },
+    {
+      "title": "TX - Brandon Lawson, 26, San Angelo, 8 Aug 2013 - #5",
+      "type": "Forum",
+      "source": "Websleuths",
+      "url": "http://www.websleuths.com/forums/showthread.php?315809-TX-Brandon-Lawson-26-San-Angelo-8-Aug-2013-5"
+    },
+    {
+      "title": "The Search for Brandon Lawson",
+      "type": "Forum",
+      "source": "Reddit",
+      "url": "https://www.reddit.com/r/brandonlawson/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Brandon Lawson 911 Call, Edited In Audacity",
+      "description": "Brandon's call to 911 is an important part of the case and there has been many attempts to transcribe it, with varying results. This video has an edited version of the call, along with the words they believe he is saying.",
+      "url": "https://www.youtube.com/embed/dAUiD8QVP1E",
+      "source": "youtube"
+    }
+  ]
 }

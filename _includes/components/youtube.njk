@@ -1,0 +1,5 @@
+<!-- Example: {{ youtube.iframe('560', '315', 'https://www.youtube.com/embed/b3FPSmlCmJk') }} -->
+
+{% macro iframe(width, height, src) %}
+  <iframe width="{{ width }}" height="{{ height }}" src="{{ src }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endmacro %}

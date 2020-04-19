@@ -1,5 +1,93 @@
 {
   "intro": "Sadly, on August 9, 2010, human remains were found, which were later confirmed to be Matrice.  In the months before she was found and continually afterward, an overwhelming number of contradictions and negligence by the police department came to light. The family eventually won a settlement based on the negligence of the department, but there are still no answers as to what happened to Mitrice. How did she end up deep in a wooded area, and how did she die?",
   "summary": "Mitrice Richardson walked out of the Lost Hills Sheriff Station at approximately 12:28 a.m. on September 16, 2009, and went missing.",
-  "title": "Mitrice Richardson"
+  "title": "Mitrice Richardson",
+  "audios": [
+    {
+      "title": "Mitrice Richardson ////// 75",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 82,
+      "url": "https://www.truecrimegarage.com/podcast/blog/mitrice-richardson-75",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/mitrice-richardson-75-48921003",
+      "itunes": ""
+    },
+    {
+      "title": "Mitrice Richardson ////// 76",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 71,
+      "url": "https://www.truecrimegarage.com/podcast/blog/mitrice-richardson-75",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/mitrice-richardson-part-2-76-48929305",
+      "itunes": ""
+    },
+    {
+      "title": "Death Of Mitrice Richardson - 323",
+      "source": "Generation Why",
+      "thumb": "generation-why.jpg",
+      "runtime": 72,
+      "url": "https://art19.com/shows/generation-why-podcast/episodes/2c410987-eff1-4aa0-ac54-4a220ba992a9",
+      "stitcher": "https://www.stitcher.com/podcast/the-generation-why-podcast/e/59891466",
+      "itunes": "https://podcasts.apple.com/kg/podcast/death-of-mitrice-richardson-323/id541481026?i=1000434356855"
+    },
+    {
+      "title": "Episode 066 - The Mysterious Death of Mitrice Richardson",
+      "source": "Trace Evidence",
+      "thumb": "trace-evidence.jpg",
+      "runtime": 97,
+      "url": "https://www.trace-evidence.com/the-mysterious-death-of-mitrice-richardson",
+      "stitcher": "https://www.stitcher.com/podcast/trace-evidence/e/58062474",
+      "itunes": "https://podcasts.apple.com/kw/podcast/066-the-mysterious-death-of-mitrice-richardson/id1239217007?i=1000427222358"
+    },
+    {
+      "title": "09 - The Murder of Mitrice Richardson",
+      "source": "Creep It Real",
+      "thumb": "creep-it-real.jpg",
+      "runtime": 60,
+      "url": "https://www.facebook.com/creepitrealpod",
+      "stitcher": "https://www.stitcher.com/podcast/creep-it-real/e/54256951",
+      "itunes": "https://podcasts.apple.com/us/podcast/09-the-murder-of-mitrice-richardson/id1355202098?i=1000409974924"
+    },
+    {
+      "title": "10 - The Murder of Mitrice Richardson",
+      "source": "Creep It Real",
+      "thumb": "creep-it-real.jpg",
+      "runtime": 104,
+      "url": "https://www.facebook.com/creepitrealpod",
+      "stitcher": "https://www.stitcher.com/podcast/creep-it-real/e/54356133",
+      "itunes": "https://podcasts.apple.com/us/podcast/10-the-murder-of-mitrice-richardson-part-2/id1355202098?i=1000410715661"
+    }
+  ],
+  "texts": [
+    {
+      "title": "Death of Mitrice Richardson",
+      "type": "Post",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Death_of_Mitrice_Richardson"
+    },
+    {
+      "title": "CA - Mitrice Richardson, 24, Malibu, 17 Sept 2009",
+      "type": "Forum",
+      "source": "Websleuths",
+      "url": "https://www.websleuths.com/forums/threads/ca-mitrice-richardson-24-malibu-17-sept-2009.89567/"
+    },
+    {
+      "title": "What Happened To Mitrice Richardson?",
+      "type": "Post",
+      "source": "Los Angeles Magazine",
+      "url": "https://www.lamag.com/longform/what-happened-to-mitrice-richardson/"
+    },
+    {
+      "title": "5 years after Mitrice Richardson’s remains were found in Malibu her death still raises questions",
+      "type": "Post",
+      "source": "Los Angeles Daily News",
+      "url": "https://www.dailynews.com/2015/11/28/5-years-after-mitrice-richardsons-remains-were-found-in-malibu-her-death-still-raises-questions/"
+    },
+    {
+      "title": "Lie and Deny: Secrecy and Suspicion Surround the Los Angeles County Sheriff's Department",
+      "type": "Post",
+      "source": "Newsweek",
+      "url": "https://www.newsweek.com/los-angeles-county-sheriffs-department-mitrice-richardson-secrecy-suspicion-450421"
+    }
+  ]
 }

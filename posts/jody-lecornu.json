@@ -1,5 +1,80 @@
 {
   "intro": "Witnesses saw her have a brief encounter with a man in a parking lot before he returned to his car. He shot her with a .38 caliber handgun, severing her spine, then followed her across the parking lot and waited for her to die. He is then said to have retrieved something from her car before casually leaving the scene.",
   "summary": "Jody LeCornu had a short interaction with a man in a parking lot well after 3 a.m. He then shot her through the back window of her car.",
-  "title": "Jody LeCornu"
+  "title": "Jody LeCornu",
+  "audios": [
+    {
+      "title": "Murdered: Jody LeCornu",
+      "source": "Crime Junkie",
+      "thumb": "crime-junkie.png",
+      "runtime": 41,
+      "url": "https://crimejunkiepodcast.com/murdered-jody-lecornu/",
+      "stitcher": "https://www.stitcher.com/podcast/ashley-flowers/crime-junkie/e/65874143",
+      "itunes": "https://podcasts.apple.com/us/podcast/murdered-jody-lecornu/id1322200189?i=1000459069008"
+    }
+  ],
+  "texts": [
+    {
+      "title": "Justice for Jody",
+      "type": "Website",
+      "source": "Justice4Jody",
+      "url": "https://www.justice4jody.com/"
+    },
+    {
+      "title": "Twin sisters: One dead, one searching for a killer. Who murdered Jody LeCornu?",
+      "type": "Post",
+      "source": "Crime Online",
+      "url": "https://www.crimeonline.com/2019/09/06/twin-sisters-one-dead-one-searching-for-a-killer-who-murdered-jody-lecornu/"
+    },
+    {
+      "title": "23 Years Later, Police And Family Seek Leads On Woman's Killing",
+      "type": "Post",
+      "source": "WBAL",
+      "url": "https://www.wbal.com/article/375817/3/23-years-later-police-and-family-seek-leads-on-womans-killing"
+    },
+    {
+      "title": "‘Find My Killer’ — Murder Victim’s Sister Seeks Justice 20 Years Later Using Billboards",
+      "type": "Post",
+      "source": "Oxygen",
+      "url": "https://www.oxygen.com/relentless-with-kate-snow/crime-news/jody-lecornu-murder-billboards-jennifer-carrieri-relentless"
+    },
+    {
+      "title": "Who is Jody LeCornu? You might have seen her on billboards in Baltimore",
+      "type": "Post",
+      "source": "Baltimore Sun",
+      "url": "https://www.baltimoresun.com/news/crime/bs-md-ci-jody-lecornu-20190318-story.html"
+    },
+    {
+      "title": "Who Killed Jody?",
+      "type": "Post",
+      "source": "Hunt a Killer",
+      "url": "https://members.huntakiller.com/blog-articles/who-killed-jody"
+    },
+    {
+      "title": "MD - Joann 'Jody' LeCornu, 23, Towson, 2 March 1996",
+      "type": "Forum",
+      "source": "Websleuths",
+      "url": "https://www.websleuths.com/forums/threads/md-joann-jody-lecornu-23-towson-2-march-1996.307758/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "BrainScratch: Who Killed Jody LeCornu?",
+      "description": "Case details covered by LordanArts",
+      "url": "https://www.youtube.com/embed/6jZyI3im51s",
+      "source": "youtube"
+    },
+    {
+      "title": "Twin's one-woman mission to solve sister's murder (Pt. 1)",
+      "description": "Jenny Carrieri is on a mission to find the murderer of her identical twin sister, Jody LeCornu. After many unanswered questions, for the first time in 23 years, she may be closer than ever with new evidence.",
+      "url": "https://www.youtube.com/embed/Fufd4q82fOM",
+      "source": "youtube"
+    },
+    {
+      "title": "Twin Buys Massive Billboards to Solve Her Sister's Murder",
+      "description": "Jennifer Carrieri was relentless in seeking justice for the murder of her sister, Jody LeCornu. She took an unusual route: Buying up massive billboards to looking for information on her killer.",
+      "url": "https://www.youtube.com/embed/5kEqlz4Pkv8",
+      "source": "youtube"
+    }
+  ]
 }

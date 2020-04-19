@@ -1,5 +1,81 @@
 {
   "intro": "It's hard to imagine a more haunting text to get from someone who has gone missing than \"idk who im with so if I call please answer. I feel in trouble.\" That was the last text that Paighton sent, to a co-worker, before she went missing. She had gone to the bar with a group of co-workers but allegedly left with two heavy-set,  black males. Her body was found in a shallow grave on January 3rd.",
   "summary": "Paighton Houston went missing on December 20, 2019, after allegedly leaving a bar with two males. Her body was found on January 3, 2020.",
-  "title": "Paighton Houston"
+  "title": "Paighton Houston",
+  "texts": [
+    {
+      "title": "Body found in shallow grave in Hueytown yard identified as Paighton Houston",
+      "type": "Post",
+      "source": "Al.com",
+      "url": "https://www.al.com/news/birmingham/2020/01/investigators-return-to-hueytown-neighborhood-as-part-of-ongoing-probe.html"
+    },
+    {
+      "title": "Paighton Houston Found: 5 Fast Facts You Need to Know",
+      "type": "Post",
+      "source": "Heavy.com",
+      "url": "https://heavy.com/news/2019/12/paighton-houston/"
+    },
+    {
+      "title": "Paighton Houston: A look at the filthy crime scene where body of beloved Alabama woman was found",
+      "type": "Post",
+      "source": "Crime Online",
+      "url": "https://www.crimeonline.com/2020/01/05/paighton-houston-a-look-at-the-filthy-crime-scene-where-body-of-beloved-alabama-woman-was-found/"
+    },
+    {
+      "title": "AL - Paighton Houston, 29, left bar with 2 men, Birmingham, 20 Dec 2019",
+      "type": "Forum",
+      "source": "Websleuths",
+      "url": "https://www.websleuths.com/forums/threads/al-paighton-houston-29-left-bar-with-2-men-birmingham-20-dec-2019.492117/"
+    },
+    {
+      "title": "Birmingham Police: Surveillance video in Paighton Houston case does not show 2 men she reportedly left with",
+      "type": "Post",
+      "source": "WBRC",
+      "url": "https://www.wbrc.com/2019/12/27/reward-offered-missing-trussville-woman/"
+    },
+    {
+      "title": "Cause of death not determined after Paighton Houston's autopsy",
+      "type": "Post",
+      "source": "ABC 3340",
+      "url": "https://abc3340.com/news/local/cause-of-death-not-determined-after-paighton-houstons-autopsy"
+    },
+    {
+      "title": "Paighton Houston update: Man charged with abuse of corpse, no physical trauma led to death",
+      "type": "Post",
+      "source": "Al.com",
+      "url": "https://www.al.com/news/birmingham/2020/01/paighton-houston-update-man-charged-with-abuse-of-corpse-cause-of-death-still-unknown.html"
+    },
+    {
+      "title": "Fredrick Hampton: 5 Fast Facts You Need to Know",
+      "type": "Post",
+      "source": "Heavy.com",
+      "url": "https://heavy.com/news/2020/01/fredrick-hampton/"
+    },
+    {
+      "title": "Suspect charged in Paighton Houston case captured in Ohio",
+      "type": "Post",
+      "source": "WBRC",
+      "url": "https://www.wbrc.com/2020/01/30/suspect-charged-paighton-houston-case-captured-ohio/"
+    },
+    {
+      "title": "Coroner: Paighton Houston died of accidental drug overdose",
+      "type": "Post",
+      "source": "Al.com",
+      "url": "https://www.al.com/news/birmingham/2020/01/coroner-paighton-houston-died-of-accidental-drug-overdose.html"
+    },
+    {
+      "title": "Suspect in Paighton Houston case waives extradition, awaiting transport to Alabama",
+      "type": "Post",
+      "source": "WVTM 13",
+      "url": "https://www.wvtm13.com/article/paighton-houston-suspect-in-trussville-womans-death-captured-in-ohio/30708394"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Body found in backyard identified as missing Alabama woman Paighton Houston",
+      "description": "A short news clip, confirming the location of where Peighton was found.",
+      "url": "https://www.youtube.com/embed/1leIf8IjTdE",
+      "source": "youtube"
+    }
+  ]
 }

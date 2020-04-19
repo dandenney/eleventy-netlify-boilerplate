@@ -1,0 +1,8 @@
+<ol class="texts-list">
+  {% for text in texts %}
+    <li>
+      <span class="u-tt-u">{{text.type}} {{text.source}}</span>
+      <a href="{{text.url}}">{{text.title}}</a>
+    </li>
+  {% endfor %}
+</ol>

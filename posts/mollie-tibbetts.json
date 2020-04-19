@@ -1,5 +1,57 @@
 {
   "intro": "Mollie went for a run on July 17, 2018, and vanished. She had been in contact with family and her boyfriend leading up to her run, which was a regular part of her life. A series of pings from her phone and Fitbit, combined with social media and text messages, helped establish a timeline of that night, but a series of searches were unable to find her. On August 21, 2018, Cristhian Rivera led law enforcement to her body.",
   "summary": "Mollie Tibbetts went for a run on July 17, 2018, and vanished. On August 21, 2018, Cristhian Rivera led law enforcement to her body.",
-  "title": "Mollie Tibbetts"
+  "title": "Mollie Tibbetts",
+  "audios": [
+    {
+      "title": "Mollie Tibbetts /// 234",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 53,
+      "url": "https://truecrimegarage.com/podcast/blog/mollie-tibbetts-233-234",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/55879511",
+      "itunes": "https://itunes.apple.com/us/podcast/mollie-tibbetts-part-1-234/id1062418176?i=1000418237711&mt=2"
+    },
+    {
+      "title": "Mollie Tibbetts /// 235",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 41,
+      "url": "https://truecrimegarage.com/podcast/blog/mollie-tibbetts-233-234",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/55882098",
+      "itunes": "https://itunes.apple.com/us/podcast/mollie-tibbetts-part-2-235/id1062418176?i=1000418244517&mt=2"
+    }
+  ],
+  "texts": [
+    {
+      "title": "Mystery Without End: Everything We Know About Missing College Student Mollie Tibbetts",
+      "type": "Post",
+      "source": "People.com",
+      "url": "https://people.com/crime/mollie-tibbetts-missing-in-iowa-everything-we-know/"
+    },
+    {
+      "title": "Cristhian Bahena Rivera’s Ex-Girlfriend Was Friends with Mollie Tibbetts on Facebook",
+      "type": "Post",
+      "source": "Heavy.com",
+      "url": "https://heavy.com/news/2018/08/cristhian-rivera-girlfriend-iris-monarrez-facebook-mollie-tibbetts/"
+    },
+    {
+      "title": "Mollie Tibbetts' Body Found: Timeline of missing Iowa student's death; Cristhian Rivera charged",
+      "type": "Post",
+      "source": "ABC 7 News",
+      "url": "https://abc7news.com/the-latest-on-missing-college-student-mollie-tibbetts/3816516/"
+    },
+    {
+      "title": "Finding Mollie",
+      "type": "Website",
+      "source": "Iowa.gov",
+      "url": "https://findingmollie.iowa.gov/"
+    },
+    {
+      "title": "Mollie Tibbetts Missing: 5 Fast Facts You Need to Know",
+      "type": "Post",
+      "source": "Heavy.com",
+      "url": "https://heavy.com/news/2018/07/mollie-tibbetts/"
+    }
+  ]
 }

@@ -6,7 +6,26 @@
   --detail: #d3d8e2;
   --radius: 0.25rem;
   --text: #4f5d78;
+  --fs1: 2.2rem;
+  --fs2: 2rem;
+  --fs3: 1.8rem;
+  --fs4: 1.6rem;
+  --fs5: 1.4rem;
+  --fs6: 1.2rem;
+  --fs7: 1rem;
+  --fs8: 0.75rem;
   --s1: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --fs1: 3.25rem;
+    --fs2: 2.5rem;
+    --fs3: 2rem;
+    --fs4: 1.75rem;
+    --fs5: 1.5rem;
+    --fs6: 1.25rem;
+  }
 }
 
 /* Box sizing rules */
@@ -111,27 +130,27 @@ h6 {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: var(--fs1);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: var(--fs2);
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: var(--fs3);
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: var(--fs4);
 }
 
 h5 {
-  font-size: 1.4rem;
+  font-size: var(--fs5);
 }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: var(--fs6);
 }
 
 h3 + p {
@@ -231,32 +250,6 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.25rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.75rem;
-  }
-
-  h5 {
-    font-size: 1.5rem;
-  }
-
-  h6 {
-    font-size: 1.25rem;
-  }
-}
-
 @media screen and (min-width: 1000px) {
   .home-articles .post {
     max-width: 100%;
@@ -326,6 +319,38 @@ a:hover {
 
 .u-fd-c {
   flex-direction: column !important;
+}
+
+.u-fs-1 {
+  font-size: var(--fs1);
+}
+
+.u-fs-2 {
+  font-size: var(--fs2);
+}
+
+.u-fs-3 {
+  font-size: var(--fs3);
+}
+
+.u-fs-4 {
+  font-size: var(--fs4);
+}
+
+.u-fs-5 {
+  font-size: var(--fs5);
+}
+
+.u-fs-6 {
+  font-size: var(--fs6);
+}
+
+.u-fs-7 {
+  font-size: var(--fs7);
+}
+
+.u-fs-8 {
+  font-size: var(--fs8);
 }
 
 .u-fw-w {
@@ -411,6 +436,10 @@ a:hover {
 
 .u-ta-r {
   text-align: right !important;
+}
+
+.u-tt-u {
+  text-transform: uppercase !important;
 }
 
 .u-w-100pc {

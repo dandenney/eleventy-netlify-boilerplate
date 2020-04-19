@@ -1,5 +1,71 @@
 {
   "intro": "Jodi was a news anchor in Mason City, Iowa, and the last known contact with her was at 4:10 a.m. on June 27, 1995. A colleague called her home, because she was late for work, and spoke briefly with her. After she didn't show up hours later, the team at the station called the police for a welfare check. When they arrived, police quickly realized that they were dealing with \"unusual circumstances,\" as Jodi's belongings were on the ground outside of her car, but she could not be found.",
   "summary": "Jodi Huisentruit was abducted outside of her apartment in 1995 and has been missing ever since. She was ruled legally dead in 2001.",
-  "title": "Jodi Huisentruit"
+  "title": "Jodi Huisentruit",
+  "audios": [
+    {
+      "title": "Jodi Huisentruit /// 208",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 66,
+      "url": "https://truecrimegarage.com/podcast/blog/jodi-huisentruit-208-209",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/54503073",
+      "itunes": "https://itunes.apple.com/us/podcast/jodi-huisentruit-part-1-208/id1062418176?i=1000411651093&mt=2"
+    },
+    {
+      "title": "Jodi Huisentruit /// 209",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 72,
+      "url": "https://truecrimegarage.com/podcast/blog/jodi-huisentruit-208-209",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/54513412",
+      "itunes": "https://itunes.apple.com/us/podcast/jodi-huisentruit-part-2-209/id1062418176?i=1000411702447&mt=2"
+    }
+  ],
+  "texts": [
+    {
+      "title": "Exclusive: John Vansice Speaks",
+      "type": "Post",
+      "source": "FindJodi.com",
+      "url": "https://www.findjodi.com/exclusive-john-vansice-speaks/"
+    },
+    {
+      "title": "Find Jodi",
+      "type": "Website",
+      "source": "FindJodi.com",
+      "url": "https://www.findjodi.com/"
+    },
+    {
+      "title": "After '48 Hours', Jodi Huisentruit tips pick up at Mason City Police Dept.",
+      "type": "Post",
+      "source": "The Courier",
+      "url": "https://wcfcourier.com/news/local/crime-and-courts/after-hours-jodi-huisentruit-tips-pick-up-at-mason-city/article_ede29843-738c-5597-96ce-fb59745d3883.html"
+    },
+    {
+      "title": "IA - Jodi Huisentruit, 27, Mason City, 27 June 1995 - Anchorwoman",
+      "type": "Forum",
+      "source": "Websleuths",
+      "url": "https://www.websleuths.com/forums/threads/ia-jodi-huisentruit-27-mason-city-27-june-1995-anchorwoman.36810/"
+    },
+    {
+      "title": "Jodi Huisentruit",
+      "type": "Post",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jodi_Huisentruit"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Jodi Huisentruit: The Next Chapter",
+      "description": "A quick synopsis of the case, created by the team behind FindJodi.com.",
+      "url": "https://www.youtube.com/embed/MhjCdPAyPLg",
+      "source": "youtube"
+    },
+    {
+      "title": "The Huisentruit File: Ep. 1, The Case",
+      "description": "The first in a series of a videos that are focused on Jodi's disappearance, created by investigative journalists Josh Benson and Gary Peterson.",
+      "url": "https://www.youtube.com/embed/k_cQRRlt_Cs",
+      "source": "youtube"
+    }
+  ]
 }

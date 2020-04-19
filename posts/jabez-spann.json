@@ -1,5 +1,89 @@
 {
   "intro": "Allegedly, Jabez was in the wrong place at the wrong time on August 28, 2017. It is believed that he witnessed the murder of Travis Combs. It’s reported that he told some people that he knew who did it and a week later, he went missing. It was over a year before his remains were found in a more rural part of Sarasota, Florida.",
   "summary": "Jabez Spann was a 14-year-old who allegedly witnessed a murder. Then, he was murdered and people know who did it.",
-  "title": "Jabez Spann"
+  "title": "Jabez Spann",
+  "audios": [
+    {
+      "title": "Jabez Spann /// 366",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 60,
+      "url": "https://truecrimegarage.com/podcast/blog/jabez-spann-part-1-366",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/66756805",
+      "itunes": "https://podcasts.apple.com/us/podcast/jabez-spann-part-1-366/id1062418176?i=1000463322773"
+    },
+    {
+      "title": "Jabez Spann /// 367",
+      "source": "True Crime Garage",
+      "thumb": "true-crime-garage.jpg",
+      "runtime": 60,
+      "url": "https://truecrimegarage.com/podcast/blog/jabez-spann-part-1-366",
+      "stitcher": "https://www.stitcher.com/podcast/true-crime-garage/e/66781161",
+      "itunes": "https://podcasts.apple.com/us/podcast/jabez-spann-part-2-367/id1062418176?i=1000463417253"
+    }
+  ],
+  "texts": [
+    {
+      "title": "FL - Jabez Spann, 14, Sarasota, 4 Sept 2017",
+      "type": "Forum",
+      "source": "Websleuths",
+      "url": "https://www.websleuths.com/forums/threads/fl-jabez-spann-14-sarasota-4-sept-2017.348756/"
+    },
+    {
+      "title": "Family fears missing teen Jabez Spann may have witnessed homicide",
+      "type": "Post",
+      "source": "NBC News",
+      "url": "https://www.nbcnews.com/feature/missing-in-america/family-fears-missing-teen-jabez-spann-may-have-witnessed-homicide-n826396"
+    },
+    {
+      "title": "Remains found of Florida teen who may have witnessed 2017 slaying",
+      "type": "Post",
+      "source": "NBC News",
+      "url": "https://www.nbcnews.com/news/us-news/remains-found-florida-teen-who-may-have-witnessed-2017-murder-n973576"
+    },
+    {
+      "title": "Memorial set up at the spot where skeletal remains of Jabez Spann were found in Palmetto",
+      "type": "Post",
+      "source": "ABC 7",
+      "url": "https://www.mysuncoast.com/2019/02/22/memorial-set-up-spot-where-skeletal-remains-jabez-spann-were-found-palmetto/"
+    },
+    {
+      "title": "Mother of Jabez Spann wants justice for her son",
+      "type": "Post",
+      "source": "Herald Tribune",
+      "url": "https://www.heraldtribune.com/news/20190220/mother-of-jabez-spann-wants-justice-for-her-son"
+    },
+    {
+      "title": "Sarasota mayor intervened in Jabez Spann case on behalf of pastor",
+      "type": "Post",
+      "source": "The Ledger",
+      "url": "https://www.theledger.com/news/20171121/sarasota-mayor-intervened-in-jabez-spann-case-on-behalf-of-pastor/1"
+    },
+    {
+      "title": "Non-profit organization honoring Jabez Spann raising awareness and helping families of missing children",
+      "type": "Post",
+      "source": "The Ledger",
+      "url": "https://www.mysuncoast.com/2019/09/16/non-profit-organization-honoring-jabez-spann-raising-awareness-helping-families-missing-children/?fbclid=IwAR35aFhtc38kJSpE4e4zKJ4YL64Iz7wxTeEabHKHn3fTaEmy67aMKPw9krE"
+    },
+    {
+      "title": "Man’s death now being investigated as homicide, police say (Travis Combs)",
+      "type": "Post",
+      "source": "Bradenton Herald",
+      "url": "https://www.bradenton.com/news/local/crime/article170485032.html"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Disappearance and Death of Jabez Spann",
+      "description": "In episode #21 of \"Intrigued Full Effect\" Shawndrea talks to the parents of 14-year-old Jabez Spann who vanished in September of 2017 in Sarasota, Florida.",
+      "url": "https://www.youtube.com/embed/scyKmKX5EZQ",
+      "source": "youtube"
+    },
+    {
+      "title": "Remains of teenager Jabez Spann, missing since 2017, found in Sarasota",
+      "description": "Authorities announced that the remains of missing teenager Jabez Spann had been found in Manatee County.",
+      "url": "https://www.youtube.com/embed/dJrErcwg1O0",
+      "source": "youtube"
+    }
+  ]
 }
