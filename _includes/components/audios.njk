@@ -1,7 +1,7 @@
 <ol class="audios-list">
   {% for audio in audios %}
     <li>
-      <img alt="{{ audio.title }}" src="https://res.cloudinary.com/dtlow08pj/image/upload/c_limit,dpr_auto,f_auto,h_200,w_200/v1585874664/true-crime-commentaries/audios/{{ audio.thumb }}" srcSet="https://res.cloudinary.com/dtlow08pj/image/upload/c_limit,dpr_auto,f_auto,h_200,w_200/v1585874664/true-crime-commentaries/audios/{{ audio.thumb }} 1x, https://res.cloudinary.com/dtlow08pj/image/upload/c_limit,dpr_auto,f_auto,h_400,w_400/v1585874664/true-crime-commentaries/audios/{{ audio.thumb }} 2x" width="200" />
+      <img alt="{{ audio.title }}" loading="lazy" src="https://res.cloudinary.com/dtlow08pj/image/upload/c_limit,dpr_auto,f_auto,h_200,w_200/v1585874664/true-crime-commentaries/audios/{{ audio.thumb }}" srcSet="https://res.cloudinary.com/dtlow08pj/image/upload/c_limit,dpr_auto,f_auto,h_200,w_200/v1585874664/true-crime-commentaries/audios/{{ audio.thumb }} 1x, https://res.cloudinary.com/dtlow08pj/image/upload/c_limit,dpr_auto,f_auto,h_400,w_400/v1585874664/true-crime-commentaries/audios/{{ audio.thumb }} 2x" width="200" />
       <p class="u-tt-u">{{ audio.source }}</p>
       <a href="{{ audio.url }}">{{ audio.title }}</a>
       <p>

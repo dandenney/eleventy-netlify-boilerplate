@@ -14,6 +14,68 @@ tags:
 
 <p>{{ intro }}</p>
 
+{% import "components/event.njk" as event %}
+
+<ol>
+  <li>
+    {{ event.meta(
+      datetime='2012-11-28',
+      dateText='November 28, 2012',
+      title='Emma is seen on CCTV footage at a 7-Eleven',
+      description='There is footage of Emma lingering in the store and she purchased a debit card and pre-paid cell on the day of her disappearance.'
+      ) 
+    }}
+    <strong class="u-d-b">
+      Trigger: 48.4223850	-123.3655720
+    </strong>
+  </li>
+  <li>
+    {{ event.meta(
+      datetime='2012-11-28',
+      dateText='November 28, 2012',
+      title='Emma is seen, distressed',
+      description='Dennis Quay, someone who had met Emma once before, ran into her in front of the Empress Hotel. She seemed out of sorts, so he sat and talked with her for an hour. Still concerned, he phoned the police when he left her to report a distressed woman.'
+      ) 
+    }}
+    <strong class="u-d-b">
+      Trigger: 48.4217580	-123.3687350
+    </strong>
+  </li>
+  <li>
+    {{ event.meta(
+      datetime='2012-11-28T19:15:00',
+      dateText='November 28, 2012, 7:15pm',
+      title='She was last seen being interviewed by police',
+      description="Police find Emma, barefoot, pacing in the same area across from the Empress Hotel. They spent around 45 minutes interviewing her, ensuring that she didn't have suicidal or homicidal thoughts."
+      ) 
+    }}
+  </li>
+  <li>
+    {{ event.meta(
+      datetime='2012-11-28',
+      dateText='November 28, 2012, 11:00pm',
+      title='Shelley Fillipoff arrives in Victoria',
+      description="Emma's mom, Shelley, arrives at the Sandy Merriman House, where she was living. Since Emma had not claimed her bed, they called the police to report her missing."
+      ) 
+    }}
+    <strong class="u-d-b">
+      Trigger: 48.4217210, -123.3628370
+    </strong>
+  </li>
+  <li>
+    {{ event.meta(
+      datetime='2012-12-05',
+      dateText='December 5, 2012',
+      title="Emma's prepaid credit card is used",
+      description='A $200 prepaid credit card that Emma purchased on the day of her disappearance is used at a Petro Canada station on Sooke Rd. The man who used it believes he found it outside the Juan de Fuca Recreation Centre. He was questioned and cleared by the police.'
+      ) 
+    }}
+    <strong class="u-d-b">
+      Trigger: 48.4460957, -123.4672774
+    </strong>
+  </li>
+</ol>
+
 {% include "components/audios.njk" %}
 
 {% include "components/texts.njk" %}

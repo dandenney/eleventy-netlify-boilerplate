@@ -1,7 +1,7 @@
 {% for post in postslist | reverse %}
 	<article class="post" {% if post.url == url %} data-current="current item"{% endif %} style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 		{% if post.data.thumb %}
-			<img alt="{{ post.data.title }}" class="thumb u-mr-1" src="{{ post.data.thumb }}" />
+			<img alt="{{ post.data.title }}" class="thumb u-mr-1" loading="lazy" src="{{ post.data.thumb }}" />
 		{% endif %}
 		<div class="meta">
 			<h3 class="title">

@@ -1,0 +1,12 @@
+{% macro meta(datetime='', dateText='', title='', description='') %}
+  <time class="u-fs-8" datetime="{{ datetime }}">
+    {{ dateText }}
+  </time>
+  <h3 class="u-fs-5">
+    {{ title }}
+  </h3>
+  <p>
+    {{ description }}
+  </p>
+{% endmacro %}
+
