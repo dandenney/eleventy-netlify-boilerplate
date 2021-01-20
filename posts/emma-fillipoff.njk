@@ -8,77 +8,103 @@ tags:
   - missing
 ---
 
-<h1>{{ title }}</h1>
-
-<p>{{ summary }}</p>
-
-<p>{{ intro }}</p>
-
 {% import "components/event.njk" as event %}
 
-<ol>
-  <li>
-    {{ event.meta(
-      datetime='2012-11-28',
-      dateText='November 28, 2012',
-      title='Emma is seen on CCTV footage at a 7-Eleven',
-      description='There is footage of Emma lingering in the store and she purchased a debit card and pre-paid cell on the day of her disappearance.'
-      ) 
-    }}
-    <strong class="u-d-b">
-      Trigger: 48.4223850	-123.3655720
-    </strong>
-  </li>
-  <li>
-    {{ event.meta(
-      datetime='2012-11-28',
-      dateText='November 28, 2012',
-      title='Emma is seen, distressed',
-      description='Dennis Quay, someone who had met Emma once before, ran into her in front of the Empress Hotel. She seemed out of sorts, so he sat and talked with her for an hour. Still concerned, he phoned the police when he left her to report a distressed woman.'
-      ) 
-    }}
-    <strong class="u-d-b">
-      Trigger: 48.4217580	-123.3687350
-    </strong>
-  </li>
-  <li>
-    {{ event.meta(
-      datetime='2012-11-28T19:15:00',
-      dateText='November 28, 2012, 7:15pm',
-      title='She was last seen being interviewed by police',
-      description="Police find Emma, barefoot, pacing in the same area across from the Empress Hotel. They spent around 45 minutes interviewing her, ensuring that she didn't have suicidal or homicidal thoughts."
-      ) 
-    }}
-  </li>
-  <li>
-    {{ event.meta(
-      datetime='2012-11-28',
-      dateText='November 28, 2012, 11:00pm',
-      title='Shelley Fillipoff arrives in Victoria',
-      description="Emma's mom, Shelley, arrives at the Sandy Merriman House, where she was living. Since Emma had not claimed her bed, they called the police to report her missing."
-      ) 
-    }}
-    <strong class="u-d-b">
-      Trigger: 48.4217210, -123.3628370
-    </strong>
-  </li>
-  <li>
-    {{ event.meta(
-      datetime='2012-12-05',
-      dateText='December 5, 2012',
-      title="Emma's prepaid credit card is used",
-      description='A $200 prepaid credit card that Emma purchased on the day of her disappearance is used at a Petro Canada station on Sooke Rd. The man who used it believes he found it outside the Juan de Fuca Recreation Centre. He was questioned and cleared by the police.'
-      ) 
-    }}
-    <strong class="u-d-b">
-      Trigger: 48.4460957, -123.4672774
-    </strong>
-  </li>
-</ol>
+<section class="u-mt-4 md:u-ai-c md:u-d-f" id="intro">
+  <img class="md:u-w-50pc" src="/static/img/resized-emma-with-camera.jpg" width="770" />
+  <div class="md:u-w-50pc u-px-2">
+    <div class="measure-sm u-mx-auto">
+      <h1 class="a-fadeIn u-b-clipped">{{ title }}</h1>
+      <p class="a-fadeIn u-fs-6">{{ summary }}</p>
+      <p class="a-fadeInAndUp u-mt-2">
+        Emma's family and a team of volunteers are actively looking for her. If you have any unreported information, please contact them via <a href="http://www.helpfindemmafillipoff.com">helpfindemmafillipoff.com</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="u-mt-4 | md:u-ai-fs md:u-d-f" id="mapContainer">
+  <ol class="md:u-px-2 lg:u-w-40pc">
+    <li class="step" data-step="1">
+      <h2>A distant move, on her own</h2>
+      <p>{{ intro }}</p>
+    </li>
+    <li class="step" data-step="02">
+      {{ event.meta(
+        datetime='2012-11-28',
+        dateText='November 28, 2012',
+        title='Emma is seen on CCTV footage at a 7-Eleven',
+        description='A special on Emma created by The Fifth Estate, has multiple clips of her in the days before her disappearance. Clips from November 20th show her going in and out of the YMCA doors and looking out in the street. On the day she went missing, there is footage from a 7-11 where she purchased a prepaid credit card.'
+        ) 
+      }}
+      <img alt="Emma purchasing a prepaid credit card" class="u-mt-1" src="/static/img/cctv-phone.jpg" />
+    </li>
+    <li class="step" data-step="03">
+      {{ event.meta(
+        datetime='2012-11-28',
+        dateText='November 28, 2012',
+        title='Emma is seen, distressed',
+        description='Dennis Quay, someone who had met Emma once before, ran into her in front of the Empress Hotel. She seemed out of sorts, so he sat and talked with her for an hour. Still concerned, he phoned the police when he left her to report a distressed woman.'
+        ) 
+      }}
+    </li>
+    <li class="step" data-step="04">
+      {{ event.meta(
+        datetime='2012-11-28',
+        dateText='November 28, 2012, 11:00pm',
+        title='Shelley Fillipoff arrives in Victoria',
+        description="Emma's mom, Shelley, arrives at the Sandy Merriman House, where she was living. Since Emma had not claimed her bed, they called the police to report her missing."
+        ) 
+      }}
+      <strong class="u-d-b">
+        Trigger: 48.4217210, -123.3628370
+      </strong>
+    </li>
+    <li class="step" data-step="05">
+      {{ event.meta(
+        datetime='2012-12-05',
+        dateText='December 5, 2012',
+        title="Emma's prepaid credit card is used",
+        description='A $200 prepaid credit card that Emma purchased on the day of her disappearance is used at a Petro Canada station on Sooke Rd. The man who used it believes he found it outside the Juan de Fuca Recreation Centre. He was questioned and cleared by the police.'
+        ) 
+      }}
+      <strong class="u-d-b">
+        Trigger: 48.4460957, -123.4672774
+      </strong>
+    </li>
+  </ol>
+
+  <figure>
+    <div id="map"></div>
+  </figure>
+</section>
+
+{% include "components/videos.njk" %}
 
 {% include "components/audios.njk" %}
 
 {% include "components/texts.njk" %}
 
-{% include "components/videos.njk" %}
+<style>
+  .step:not(:first-of-type) {
+    margin-top: 8rem;
+  }
 
+  figure {
+    width: 60%;
+  }
+
+  #map {
+    height: 100vh;
+    width: 100%;
+  }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+<link
+  href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
+  rel="stylesheet"
+/>
+<script src="/_includes/assets/js/case-summaries/emma-fillipoff.js"></script>

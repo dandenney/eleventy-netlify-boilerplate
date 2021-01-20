@@ -31,6 +31,8 @@
     "@11ty/eleventy-navigation": "^0.1.5",
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
+    "intersection-observer": "^0.10.0",
+    "scrollama": "^2.2.1",
     "uglify-es": "^3.3.9"
   }
 }

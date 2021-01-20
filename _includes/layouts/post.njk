@@ -6,13 +6,14 @@ section: post
 {{ caseTitle }}
 
 <article>
+
+  {{ layoutContent | safe }}
+
   <p>
     <small>
       <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
     </small>
   </p>
-
-  {{ layoutContent | safe }}
 
   {% if tags %}
     <p>
